@@ -38,11 +38,11 @@ data = pd.DataFrame({
 })
 
 data['Apto_retorno'] = (
-    (data['Fuerza_CMJ'] > 32) &
-    (data['Tiempo_TTest'] < 10) &
-    (data['Asimetria'] < 5) &
+    (data['Fuerza_CMJ'] > 28) &
+    (data['Tiempo_TTest'] < 11) &
+    (data['Asimetria'] < 10) &
     (data['Dolor_reportado'] == 0) &
-    (data['Confianza_auto'] > 5) &
+    (data['Confianza_auto'] > 4) &
     (data['Alta_medica'] == 1)
 ).astype(int)
 
